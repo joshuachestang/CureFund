@@ -5,6 +5,8 @@ Curefundlanding::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'landing_pages#home'
 
+  resources :enlisters
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

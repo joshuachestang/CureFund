@@ -13009,3 +13009,2180 @@ ActionView::MissingTemplate (Missing template donors/create, application/create 
 
 
   Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 20:47:27 -0500
+
+PG::Error (FATAL:  database "curefund_development" does not exist
+):
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:796:in `initialize'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:796:in `new'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:796:in `connect'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:513:in `initialize'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.0.rc1) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.0.rc1) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:775:in `current_version'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:783:in `needs_migration?'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:376:in `check_pending!'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:364:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/logger_silence.rb:16:in `silence'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:363:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:392:in `_run__2968611622360058838__call__callbacks'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.3ms)
+  [1m[36m (27.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (4.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateDonors (20130620203657)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (18.3ms)[0m  [1mCREATE TABLE "donors" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "donation_amount" decimal, "cure_fund_project_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130620203657"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCureFundProjects (20130620212305)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "cure_fund_projects" ("id" serial primary key, "expires_at" date, "name" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130620212305"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 21:01:51 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (2.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  Rendered landing_pages/home.html.erb within layouts/application (27.1ms)
+Completed 500 Internal Server Error in 118ms
+
+ActionView::Template::Error (undefined method `expires_at' for nil:NilClass):
+    115:                         <span>of <%= number_to_currency Donor.funding_goal, :precision => 0 %></span>
+    116:                       </li>
+    117:                       <li class="stats" id="days">
+    118:                         <%= CureFundProject.time_left %>
+    119:                         <span><%= pluralize(CureFundProject.time_left, "day") %> left</span>
+    120:                       </li>
+    121:                       
+  app/models/cure_fund_project.rb:12:in `time_left'
+  app/views/landing_pages/home.html.erb:118:in `_app_views_landing_pages_home_html_erb__4045176275413006456_70258799813820'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (10.1ms)[0m  [1mINSERT INTO "cure_fund_projects" ("created_at", "expires_at", "name", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Fri, 28 Jun 2013 02:02:08 UTC +00:00], ["expires_at", Mon, 26 Aug 2013], ["name", "CureFund"], ["updated_at", Fri, 28 Jun 2013 02:02:08 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  COMMIT
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 21:08:26 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (3.3ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (143.1ms)
+Completed 200 OK in 428ms (Views: 329.7ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 21:08:27 -0500
+
+
+Started POST "/cure_fund_projects/1/donors" for 127.0.0.1 at 2013-06-27 21:24:27 -0500
+Processing by DonorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0K1UPCMbvCVX3hNv8jhD55XkglJ7m0phBCjnAPZHT2A=", "donor"=>{"donation_amount"=>"5", "card_number"=>"", "cvc"=>"", "expiration_date_month"=>"", "expiration_date_year"=>""}, "cure_fund_project_id"=>"1"}
+  [1m[35mCureFundProject Load (3.2ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+WARNING: Can't mass-assign protected attributes for Donor: card_number, cvc
+	app/controllers/donors_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 74ms
+
+ActionView::MissingTemplate (Missing template donors/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/joshuachestang/CureFund/app/views"
+):
+  app/controllers/donors_controller.rb:15:in `create'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.7ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.4ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 239ms (Views: 33.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 21:30:06 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 21:34:54 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.7ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.4ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 45ms (Views: 37.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 21:34:54 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 21:34:54 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 21:34:54 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 21:34:54 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 21:34:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEnlisters (20130628024438)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (42.7ms)[0m  [1mCREATE TABLE "enlisters" ("id" serial primary key, "email" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20130628024438"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:14:45 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (2.6ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+ERROR: compiling _app_views_landing_pages_home_html_erb___1006461794339491878_70242614128540 RAISED /Users/joshuachestang/CureFund/app/views/landing_pages/home.html.erb:56: syntax error, unexpected =>, expecting :: or '[' or '.'
+...uffer.append=( f.submit, :id => "subscriber-submit", :class ...
+...                               ^
+/Users/joshuachestang/CureFund/app/views/landing_pages/home.html.erb:56: syntax error, unexpected ',', expecting ')'
+...it, :id => "subscriber-submit", :class => "button large icon...
+...                               ^
+Function body:           def _app_views_landing_pages_home_html_erb___1006461794339491878_70242614128540(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "landing_pages/home";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<script type="text/javascript">
+    jQuery(function($) {
+      $(\'#payment-form\').submit(function(event) {
+        var $form = $(this);
+
+        // Disable the submit button to prevent repeated clicks
+        $form.find(\'button\').prop(\'disabled\', true);
+
+        Stripe.createToken($form, stripeResponseHandler);
+
+        // Prevent the form from submitting with the default action
+        return false;
+      });
+    });
+    var stripeResponseHandler = function(status, response) {
+      var $form = $(\'#payment-form\');
+
+      if (response.error) {
+        // Show the errors on the form
+        $form.find(\'.payment-errors\').text(response.error.message);
+        $form.find(\'button\').prop(\'disabled\', false);
+      } else {
+        // token contains id, last4, and card type
+        var token = response.id;
+        // Insert the token into the form so it gets submitted to the server
+        $form.append($(\'<input type="hidden" name="stripeToken" />\').val(token));
+        // and submit
+        $form.get(0).submit();
+      }
+    };
+</script>
+<!-- ========================== HEADER ========================== -->
+    <header class="bck margin-top margin-bottom">
+        <div class="row">
+            <div class="column_6">
+                <h2 class="text italic thin"><strong>Cure</strong>Fund</h2>
+            </div>
+            <nav class="column_6 text right">
+                <a href="#" class="button secondary"><span class="icon user"></span>Login</a>
+                <a href="#" class="button"><span class="icon pencil"></span>Signup</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bck darkest landing text center color white">
+        <div class="row">
+            <div class="column_10 offset_1">
+                <h1><strong>Cure</strong>Fund</h1>
+                <h2 class="margin-bottom">Raise money to find cures for diseases, disabilities, and conditions.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column_6 offset_3 form subscribe">
+              ';@output_buffer.append=  form_for Enlister.new, :remote => true do |f| @output_buffer.safe_append='
+                ';@output_buffer.append=( f.email_field :email, :id => "subscriber", :id => "mail", :class => "large", :placeholder => "Your email address" );@output_buffer.safe_append='
+                ';@output_buffer.append=( f.submit, :id => "subscriber-submit", :class => "button large icon envelope" );@output_buffer.safe_append='
+';               end 
+@output_buffer.safe_append='
+            </div>
+        </div>
+        <h5 class="text book">Join our mailing list to stay updated on our progress.</h5>
+    </section>
+
+    <section class="bck theme padding text center ">
+        <div class="row padding-bottom">
+            <div class="column_10 offset_1">
+                <h1 class="text book color default">Crowdfunding + Altruism</h1>
+                <h4>
+                    CureFund wants to utilize the collective power of scientists and research supporters <br /> around the world to find cures for our loved ones. 
+                </h4>
+            </div>
+        </div>
+
+        <div class="row padding-top">
+          <div class="column_4">
+              <h2 class="icon user"></h2>
+              <h5 class="text normal">Raise money for research</h5>
+              <small>Create CureFund projects to raise money for research through organizations or to campaign for current cure seeking organizations</small>
+          </div>
+          <div class="column_4">
+              <h2 class="icon group"></h2>
+              <h5 class="text normal">Invite others to join your movement</h5>
+              <small>Share information and links to your project to gain supporters for your cause. Utilize our network to gain even more support</small>
+          </div>
+          <div class="column_4">
+              <h2 class="icon cog"></h2>
+              <h5 class="text normal">Notify donors of your progress</h5>
+              <small>Let your donors how important it has been that the have support youxr cause. You never know what that might mean for your future research</small>
+          </div>
+        </div>
+    </section>
+
+    <section class="bck light padding">
+        <div class="row text thin center">
+            <div class="column_10 offset_1">
+                <h1 class="text book color theme">We\'re utilizing online crowdfunding to increase support for finding cures for the most important people in our lives.</h1>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="bck lightest landing">
+        <div class="row text center">
+            <div class="column_10 offset_1">
+                <h2 class="text bold color theme">Help fund CureFund\'s Development</h2>
+                
+                <div id="cure_fund" class ="row center">
+                  <div id="backing" class="column_5">
+                    <ul>
+                      <li class="stats" id="backers">
+                        ';@output_buffer.append=( Donor.total_donors );@output_buffer.safe_append='
+                        <span>';@output_buffer.append=( pluralize(Donor.total_donors, 'donor') );@output_buffer.safe_append='</span>
+                      </li>
+                      <li class="stats">
+                        ';@output_buffer.append=( number_to_currency Donor.donations_total, :precision => 0 );@output_buffer.safe_append='
+                        <span>of ';@output_buffer.append=( number_to_currency Donor.funding_goal, :precision => 0 );@output_buffer.safe_append='</span>
+                      </li>
+                      <li class="stats" id="days">
+                        ';@output_buffer.append=( CureFundProject.time_left );@output_buffer.safe_append='
+                        <span>';@output_buffer.append=( pluralize(CureFundProject.time_left, "day") );@output_buffer.safe_append=' left</span>
+                      </li>
+                      
+                    </ul>
+
+                      <div id=\'progress_bg\' class=\'small\'>
+                        <div id=\'progress\' class=\'\' style=\'width: ';@output_buffer.append=( Donor.percentage_raised_of_goal );@output_buffer.safe_append='%;\'>
+                        </div>
+                      </div>
+                    
+                    
+                    <div id="reserve_container">
+                      <p id="ship_date">Ships at the end of the summer.</p>
+                      <!-- <a href="#" class="button anchor success margin-top">Yes, please!</a> -->
+                      <!-- ========================== Modals ========================== -->
+                      <!-- <section class="padding bck light"> -->
+                          <div class="row margin-top margin-bottom text center">=
+                              <button class="large column_4" data-tuktuk-modal="big_modal">Donate Now</button>
+                          </div>
+                          <br />
+                      <!-- </section> -->
+                      <!-- <p id="price">';;@output_buffer.safe_append='</p> -->
+                      <p>Yes, by clicking the above button you\'re helping some random person in the world!</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="padding bck color">
+        <div class="row margin-bottom">
+            <h1 class="color book theme center margin-bottom" style="text-align:center;">Starters</h1>
+            <div class="column_5 text center" style="margin-left:10%;">
+                <h3 class="text thin">Joshua Chestang is the CTO and co-founder of CureFund. A restless mind that always strives for continuous improvement, able to create frameworks like</h3>
+             </div>
+             <div class="column_5 text center">
+                <h3 class="text thin">Salvador Briggman is the CEO and co-founder of CureFund. A restless mind that always strives for continuous improvement, able to create frameworks like</h3>
+             </div>
+         </div>
+
+        <div class="row ">
+            <div class="column_4 offset_4 text center">
+                <img src="https://lh4.googleusercontent.com/-27P83t9JaAY/AAAAAAAAAAI/AAAAAAAAADc/WtpO9JlHt-Q/s120-c/photo.jpg" style="height:150px; width:150px;" class="responsive rounded margin-bottom"/>
+                <a href="https://twitter.com/jrchestang" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @jrchestang</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bck dark padding">
+        <div class="row margin-top margin-bottom">
+            <div class="column_5">
+                <p class="text bold big">Handcrafted by <a href="http://2and2labs.com" class="display inline">2&2 Labs USA</a></p>
+                We build <strong>responsive websites and apps</strong> for clients around the world.
+            </div>
+            <div class="column_4">
+                <p class="text bold big">Join the team!</p>
+                Let us know how you\'re doing! <a href="mailto:joshua@2and2labs.com?subject=Opportunity" class="text underline color theme">Get in touch</a>
+            </div>
+            <div class="column_3">
+                <p class="text bold big">Need some help?</p>
+                For quick answers or help <a href="https://twitter.com/jrchestang" target="_blank" class="text underline color theme">follow us</a>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- ========================== MODALS ========================== -->
+
+    <div id="big_modal" data-tuktuk="modal" class="column_8">
+        <header class="bck alert">
+            <h4 class="text thin inline">Make a donation today</h4>
+            <button data-modal="close" class="transparent small on-right inline icon remove"></button>
+        </header>
+        <div id="payment-form-wrapper">
+          ';@output_buffer.append=  form_for ([@cure_fund_project, @donor]), :html => { :id  => "payment-form" }, :method => 'post' do |f| @output_buffer.safe_append='
+            <span class="payment-errors"></span>
+            <div class="form-row" id="donation_amounts">
+              <label>
+                <span>Donation Amount</span><br />
+                
+';
+@output_buffer.safe_append='                ';@output_buffer.append=( f.radio_button :donation_amount, "5", :checked => true );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_5, '$5' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "10" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_10, '$10' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "15" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_15, '$15' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "20" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_20, '$20' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "25" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_25, '$25' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "30" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_30, '$30' );@output_buffer.safe_append='
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Card Number</span>
+                ';@output_buffer.append=( f.text_field :card_number, :"data-stripe" => "number");@output_buffer.safe_append='
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span>CVC</span>
+                ';@output_buffer.append=( f.text_field :cvc, :"data-stripe" => "cvc" );@output_buffer.safe_append='
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span>Card Expiration Month</span>
+                <span class="select">';@output_buffer.append=( f.select :expiration_date_month, ["", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],  :"data-stripe" => "exp-month" );@output_buffer.safe_append='</span>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Card Expiration Year</span>
+                <span class="select">';@output_buffer.append=( f.select :expiration_date_year, ["", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"], :"data-stripe" => "exp-year" );@output_buffer.safe_append='</span>
+              </label>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="button large success" style="margin-left: 20px;"><span class="icon ok"></span>Donate</button>
+              <button data-modal="close" class="button  alert"><span class="icon remove"></span>Cancel</button>
+            </div>
+';           end 
+@output_buffer.safe_append='        </div>
+         <!--  
+          <footer>
+            <button data-modal="close" class="button large success"><span class="icon ok"></span>Donate</button>
+            <button data-modal="close" class="button  alert"><span class="icon remove"></span>Cancel</button>
+          </footer> -->
+    </div>
+
+    <!-- TUKTUK.WIDGETS -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    ';@output_buffer.append=( javascript_include_tag "tuktuk.js" );@output_buffer.safe_append='
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:299:in `module_eval'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:299:in `compile'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:248:in `block in compile!'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:236:in `synchronize'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:236:in `compile!'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:142:in `block in render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:141:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/callbacks.rb:422:in `_run__1478190214807731835__process_action__callbacks'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/base.rb:136:in `process'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal.rb:231:in `block in action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/routing/route_set.rb:654:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/newrelic_rpm-3.6.3.104/lib/new_relic/rack/error_collector.rb:12:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/newrelic_rpm-3.6.3.104/lib/new_relic/rack/agent_hooks.rb:22:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/newrelic_rpm-3.6.3.104/lib/new_relic/rack/browser_monitoring.rb:16:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/newrelic_rpm-3.6.3.104/lib/new_relic/rack/developer_mode.rb:28:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/query_cache.rb:36:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/migration.rb:366:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/callbacks.rb:392:in `_run__1562201018281409819__call__callbacks'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/rack/logger.rb:21:in `block in call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/rack/logger.rb:21:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/engine.rb:511:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/application.rb:96:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered landing_pages/home.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 120ms
+
+ActionView::Template::Error (/Users/joshuachestang/CureFund/app/views/landing_pages/home.html.erb:56: syntax error, unexpected =>, expecting :: or '[' or '.'
+...uffer.append=( f.submit, :id => "subscriber-submit", :class ...
+...                               ^
+/Users/joshuachestang/CureFund/app/views/landing_pages/home.html.erb:56: syntax error, unexpected ',', expecting ')'
+...it, :id => "subscriber-submit", :class => "button large icon...
+...                               ^):
+    53:             <div class="column_6 offset_3 form subscribe">
+    54:               <%= form_for Enlister.new, :remote => true do |f| %>
+    55:                 <%= f.email_field :email, :id => "subscriber", :id => "mail", :class => "large", :placeholder => "Your email address" %>
+    56:                 <%= f.submit, :id => "subscriber-submit", :class => "button large icon envelope" %>
+    57:               <% end %>
+    58: 
+    59:             </div>
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0.rc1) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0.rc1) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0.rc1) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0.rc1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0.rc1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0.rc1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0.rc1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0.rc1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:422:in `_run__1478190214807731835__process_action__callbacks'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0.rc1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0.rc1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0.rc1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0.rc1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0.rc1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:654:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/error_collector.rb:12:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/agent_hooks.rb:22:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/browser_monitoring.rb:16:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/developer_mode.rb:28:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:392:in `_run__1562201018281409819__call__callbacks'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:15:05 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (1.4ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.5ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (113.4ms)
+Completed 200 OK in 307ms (Views: 297.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:15:06 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:17:46 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (1.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 73ms (Views: 52.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:17:47 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:18:45 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.7ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.5ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 271ms (Views: 264.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:46 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (2.0ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (33.8ms)
+Completed 200 OK in 45ms (Views: 38.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:18:57 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.6ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.4ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 45ms (Views: 39.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:19:12 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:25:58 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+ERROR: compiling _app_views_landing_pages_home_html_erb___1006461794339491878_70242624421420 RAISED /Users/joshuachestang/CureFund/app/views/landing_pages/home.html.erb:56: syntax error, unexpected ':', expecting ')'
+... "button large icon envelope" :style => "border-top-left-rad...
+...                               ^
+Function body:           def _app_views_landing_pages_home_html_erb___1006461794339491878_70242624421420(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "landing_pages/home";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<script type="text/javascript">
+    jQuery(function($) {
+      $(\'#payment-form\').submit(function(event) {
+        var $form = $(this);
+
+        // Disable the submit button to prevent repeated clicks
+        $form.find(\'button\').prop(\'disabled\', true);
+
+        Stripe.createToken($form, stripeResponseHandler);
+
+        // Prevent the form from submitting with the default action
+        return false;
+      });
+    });
+    var stripeResponseHandler = function(status, response) {
+      var $form = $(\'#payment-form\');
+
+      if (response.error) {
+        // Show the errors on the form
+        $form.find(\'.payment-errors\').text(response.error.message);
+        $form.find(\'button\').prop(\'disabled\', false);
+      } else {
+        // token contains id, last4, and card type
+        var token = response.id;
+        // Insert the token into the form so it gets submitted to the server
+        $form.append($(\'<input type="hidden" name="stripeToken" />\').val(token));
+        // and submit
+        $form.get(0).submit();
+      }
+    };
+</script>
+<!-- ========================== HEADER ========================== -->
+    <header class="bck margin-top margin-bottom">
+        <div class="row">
+            <div class="column_6">
+                <h2 class="text italic thin"><strong>Cure</strong>Fund</h2>
+            </div>
+            <nav class="column_6 text right">
+                <a href="#" class="button secondary"><span class="icon user"></span>Login</a>
+                <a href="#" class="button"><span class="icon pencil"></span>Signup</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bck darkest landing text center color white">
+        <div class="row">
+            <div class="column_10 offset_1">
+                <h1><strong>Cure</strong>Fund</h1>
+                <h2 class="margin-bottom">Raise money to find cures for diseases, disabilities, and conditions.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column_6 offset_3 form subscribe">
+              ';@output_buffer.append=  form_for Enlister.new, :remote => true do |f| @output_buffer.safe_append='
+                ';@output_buffer.append=( f.email_field :email, :id => "subscriber", :id => "mail", :class => "large", :style => "width: 476px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;", :placeholder => "Your email address" );@output_buffer.safe_append='
+                ';@output_buffer.append=( f.submit :id => "subscriber-submit", :class => "button large icon envelope" :style => "border-top-left-radius: 0px; border-bottom-left-radius: 0px;height: 49.3px;" );@output_buffer.safe_append='
+';               end 
+@output_buffer.safe_append='
+
+                <input id="subscriber" type="email" id="mail" class="large" placeholder="Your email address">
+                <button id="subscriber-submit" class="button large icon envelope"></button>
+            </div>
+        </div>
+        <h5 class="text book">Join our mailing list to stay updated on our progress.</h5>
+    </section>
+
+    <section class="bck theme padding text center ">
+        <div class="row padding-bottom">
+            <div class="column_10 offset_1">
+                <h1 class="text book color default">Crowdfunding + Altruism</h1>
+                <h4>
+                    CureFund wants to utilize the collective power of scientists and research supporters <br /> around the world to find cures for our loved ones. 
+                </h4>
+            </div>
+        </div>
+
+        <div class="row padding-top">
+          <div class="column_4">
+              <h2 class="icon user"></h2>
+              <h5 class="text normal">Raise money for research</h5>
+              <small>Create CureFund projects to raise money for research through organizations or to campaign for current cure seeking organizations</small>
+          </div>
+          <div class="column_4">
+              <h2 class="icon group"></h2>
+              <h5 class="text normal">Invite others to join your movement</h5>
+              <small>Share information and links to your project to gain supporters for your cause. Utilize our network to gain even more support</small>
+          </div>
+          <div class="column_4">
+              <h2 class="icon cog"></h2>
+              <h5 class="text normal">Notify donors of your progress</h5>
+              <small>Let your donors how important it has been that the have support youxr cause. You never know what that might mean for your future research</small>
+          </div>
+        </div>
+    </section>
+
+    <section class="bck light padding">
+        <div class="row text thin center">
+            <div class="column_10 offset_1">
+                <h1 class="text book color theme">We\'re utilizing online crowdfunding to increase support for finding cures for the most important people in our lives.</h1>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="bck lightest landing">
+        <div class="row text center">
+            <div class="column_10 offset_1">
+                <h2 class="text bold color theme">Help fund CureFund\'s Development</h2>
+                
+                <div id="cure_fund" class ="row center">
+                  <div id="backing" class="column_5">
+                    <ul>
+                      <li class="stats" id="backers">
+                        ';@output_buffer.append=( Donor.total_donors );@output_buffer.safe_append='
+                        <span>';@output_buffer.append=( pluralize(Donor.total_donors, 'donor') );@output_buffer.safe_append='</span>
+                      </li>
+                      <li class="stats">
+                        ';@output_buffer.append=( number_to_currency Donor.donations_total, :precision => 0 );@output_buffer.safe_append='
+                        <span>of ';@output_buffer.append=( number_to_currency Donor.funding_goal, :precision => 0 );@output_buffer.safe_append='</span>
+                      </li>
+                      <li class="stats" id="days">
+                        ';@output_buffer.append=( CureFundProject.time_left );@output_buffer.safe_append='
+                        <span>';@output_buffer.append=( pluralize(CureFundProject.time_left, "day") );@output_buffer.safe_append=' left</span>
+                      </li>
+                      
+                    </ul>
+
+                      <div id=\'progress_bg\' class=\'small\'>
+                        <div id=\'progress\' class=\'\' style=\'width: ';@output_buffer.append=( Donor.percentage_raised_of_goal );@output_buffer.safe_append='%;\'>
+                        </div>
+                      </div>
+                    
+                    
+                    <div id="reserve_container">
+                      <p id="ship_date">Ships at the end of the summer.</p>
+                      <!-- <a href="#" class="button anchor success margin-top">Yes, please!</a> -->
+                      <!-- ========================== Modals ========================== -->
+                      <!-- <section class="padding bck light"> -->
+                          <div class="row margin-top margin-bottom text center">=
+                              <button class="large column_4" data-tuktuk-modal="big_modal">Donate Now</button>
+                          </div>
+                          <br />
+                      <!-- </section> -->
+                      <!-- <p id="price">';;@output_buffer.safe_append='</p> -->
+                      <p>Yes, by clicking the above button you\'re helping some random person in the world!</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="padding bck color">
+        <div class="row margin-bottom">
+            <h1 class="color book theme center margin-bottom" style="text-align:center;">Starters</h1>
+            <div class="column_5 text center" style="margin-left:10%;">
+                <h3 class="text thin">Joshua Chestang is the CTO and co-founder of CureFund. A restless mind that always strives for continuous improvement, able to create frameworks like</h3>
+             </div>
+             <div class="column_5 text center">
+                <h3 class="text thin">Salvador Briggman is the CEO and co-founder of CureFund. A restless mind that always strives for continuous improvement, able to create frameworks like</h3>
+             </div>
+         </div>
+
+        <div class="row ">
+            <div class="column_4 offset_4 text center">
+                <img src="https://lh4.googleusercontent.com/-27P83t9JaAY/AAAAAAAAAAI/AAAAAAAAADc/WtpO9JlHt-Q/s120-c/photo.jpg" style="height:150px; width:150px;" class="responsive rounded margin-bottom"/>
+                <a href="https://twitter.com/jrchestang" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @jrchestang</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bck dark padding">
+        <div class="row margin-top margin-bottom">
+            <div class="column_5">
+                <p class="text bold big">Handcrafted by <a href="http://2and2labs.com" class="display inline">2&2 Labs USA</a></p>
+                We build <strong>responsive websites and apps</strong> for clients around the world.
+            </div>
+            <div class="column_4">
+                <p class="text bold big">Join the team!</p>
+                Let us know how you\'re doing! <a href="mailto:joshua@2and2labs.com?subject=Opportunity" class="text underline color theme">Get in touch</a>
+            </div>
+            <div class="column_3">
+                <p class="text bold big">Need some help?</p>
+                For quick answers or help <a href="https://twitter.com/jrchestang" target="_blank" class="text underline color theme">follow us</a>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- ========================== MODALS ========================== -->
+
+    <div id="big_modal" data-tuktuk="modal" class="column_8">
+        <header class="bck alert">
+            <h4 class="text thin inline">Make a donation today</h4>
+            <button data-modal="close" class="transparent small on-right inline icon remove"></button>
+        </header>
+        <div id="payment-form-wrapper">
+          ';@output_buffer.append=  form_for ([@cure_fund_project, @donor]), :html => { :id  => "payment-form" }, :method => 'post' do |f| @output_buffer.safe_append='
+            <span class="payment-errors"></span>
+            <div class="form-row" id="donation_amounts">
+              <label>
+                <span>Donation Amount</span><br />
+                
+';
+@output_buffer.safe_append='                ';@output_buffer.append=( f.radio_button :donation_amount, "5", :checked => true );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_5, '$5' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "10" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_10, '$10' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "15" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_15, '$15' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "20" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_20, '$20' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "25" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_25, '$25' );@output_buffer.safe_append='
+
+                ';@output_buffer.append=( f.radio_button :donation_amount, "30" );@output_buffer.safe_append='
+                ';@output_buffer.append=( label :donation_amount_30, '$30' );@output_buffer.safe_append='
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Card Number</span>
+                ';@output_buffer.append=( f.text_field :card_number, :"data-stripe" => "number");@output_buffer.safe_append='
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span>CVC</span>
+                ';@output_buffer.append=( f.text_field :cvc, :"data-stripe" => "cvc" );@output_buffer.safe_append='
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span>Card Expiration Month</span>
+                <span class="select">';@output_buffer.append=( f.select :expiration_date_month, ["", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],  :"data-stripe" => "exp-month" );@output_buffer.safe_append='</span>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Card Expiration Year</span>
+                <span class="select">';@output_buffer.append=( f.select :expiration_date_year, ["", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"], :"data-stripe" => "exp-year" );@output_buffer.safe_append='</span>
+              </label>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="button large success" style="margin-left: 20px;"><span class="icon ok"></span>Donate</button>
+              <button data-modal="close" class="button  alert"><span class="icon remove"></span>Cancel</button>
+            </div>
+';           end 
+@output_buffer.safe_append='        </div>
+         <!--  
+          <footer>
+            <button data-modal="close" class="button large success"><span class="icon ok"></span>Donate</button>
+            <button data-modal="close" class="button  alert"><span class="icon remove"></span>Cancel</button>
+          </footer> -->
+    </div>
+
+    <!-- TUKTUK.WIDGETS -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    ';@output_buffer.append=( javascript_include_tag "tuktuk.js" );@output_buffer.safe_append='
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:299:in `module_eval'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:299:in `compile'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:248:in `block in compile!'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:236:in `synchronize'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:236:in `compile!'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:142:in `block in render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/template.rb:141:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/callbacks.rb:422:in `_run__1478190214807731835__process_action__callbacks'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/notifications.rb:159:in `instrument'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/base.rb:136:in `process'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_controller/metal.rb:231:in `block in action'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/routing/route_set.rb:654:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/newrelic_rpm-3.6.3.104/lib/new_relic/rack/error_collector.rb:12:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/newrelic_rpm-3.6.3.104/lib/new_relic/rack/agent_hooks.rb:22:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/newrelic_rpm-3.6.3.104/lib/new_relic/rack/browser_monitoring.rb:16:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/newrelic_rpm-3.6.3.104/lib/new_relic/rack/developer_mode.rb:28:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/query_cache.rb:36:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activerecord-4.0.0.rc1/lib/active_record/migration.rb:366:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/callbacks.rb:392:in `_run__1562201018281409819__call__callbacks'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/rack/logger.rb:21:in `block in call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/rack/logger.rb:21:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/activesupport-4.0.0.rc1/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/engine.rb:511:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/railties-4.0.0.rc1/lib/rails/application.rb:96:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+/Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+/Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered landing_pages/home.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (/Users/joshuachestang/CureFund/app/views/landing_pages/home.html.erb:56: syntax error, unexpected ':', expecting ')'
+... "button large icon envelope" :style => "border-top-left-rad...
+...                               ^):
+    53:             <div class="column_6 offset_3 form subscribe">
+    54:               <%= form_for Enlister.new, :remote => true do |f| %>
+    55:                 <%= f.email_field :email, :id => "subscriber", :id => "mail", :class => "large", :style => "width: 476px; border-top-right-radius: 0px; border-bottom-right-radius: 0px;", :placeholder => "Your email address" %>
+    56:                 <%= f.submit :id => "subscriber-submit", :class => "button large icon envelope" :style => "border-top-left-radius: 0px; border-bottom-left-radius: 0px;height: 49.3px;" %>
+    57:               <% end %>
+    58: 
+    59: 
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0.rc1) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0.rc1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0.rc1) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0.rc1) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0.rc1) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0.rc1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.0.rc1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0.rc1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0.rc1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0.rc1) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:422:in `_run__1478190214807731835__process_action__callbacks'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0.rc1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0.rc1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0.rc1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0.rc1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0.rc1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0.rc1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0.rc1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:654:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/error_collector.rb:12:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/agent_hooks.rb:22:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/browser_monitoring.rb:16:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/developer_mode.rb:28:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:392:in `_run__1562201018281409819__call__callbacks'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.5ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.3ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:11 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.6ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:45 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.5ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.5ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:26:59 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:27:46 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  Rendered landing_pages/home.html.erb within layouts/application (80.3ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x007fc5443983a0>):
+    52:         <div class="row">
+    53:             <div class="column_6 offset_3 form subscribe">
+    54:               <%= form_for Enlister.new, :remote => true do |f| %>
+    55:                 <%= f.input :email, :id => "subscriber", :id => "mail", :class => "large", :style => " border-top-right-radius: 0px; border-bottom-right-radius: 0px;", :placeholder => "Your email address" %>
+    56:                 <button id="subscriber-submit" class="button large icon envelope"></button>
+    57:               <% end %>
+    58: 
+  app/views/landing_pages/home.html.erb:55:in `block in _app_views_landing_pages_home_html_erb___1006461794339491878_70242614823420'
+  app/views/landing_pages/home.html.erb:54:in `_app_views_landing_pages_home_html_erb___1006461794339491878_70242614823420'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:27:55 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.5ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  Rendered landing_pages/home.html.erb within layouts/application (70.3ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x007fc54709c7c0>):
+    52:         <div class="row">
+    53:             <div class="column_6 offset_3 form subscribe">
+    54:               <%= form_for Enlister.new, :remote => true do |f| %>
+    55:                 <%= f.input :email, :id => "subscriber", :id => "mail", :class => "large", :style => " border-top-right-radius: 0px; border-bottom-right-radius: 0px;", :placeholder => "Your email address" %>
+    56:                 <button id="subscriber-submit" class="button large icon envelope"></button>
+    57:               <% end %>
+    58: 
+  app/views/landing_pages/home.html.erb:55:in `block in _app_views_landing_pages_home_html_erb___1006461794339491878_70242614823420'
+  app/views/landing_pages/home.html.erb:54:in `_app_views_landing_pages_home_html_erb___1006461794339491878_70242614823420'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.8ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.6ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:27:58 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.5ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.5ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (63.3ms)
+Completed 200 OK in 74ms (Views: 69.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:29:09 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.4ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:27 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.5ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.5ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 84ms (Views: 78.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:30:58 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-06-27 22:31:15 -0500
+
+LoadError (Unable to autoload constant EnlistersController, expected /Users/joshuachestang/CureFund/app/controllers/enlisters_controller.rb to define it):
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0.rc1) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0.rc1) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0.rc1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/routing/route_set.rb:654:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/error_collector.rb:12:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/agent_hooks.rb:22:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/browser_monitoring.rb:16:in `call'
+  newrelic_rpm (3.6.3.104) lib/new_relic/rack/developer_mode.rb:28:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0.rc1) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:392:in `_run__1562201018281409819__call__callbacks'
+  activesupport (4.0.0.rc1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0.rc1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0.rc1) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0.rc1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0.rc1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0.rc1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0.rc1) lib/rails/application.rb:96:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/joshuachestang/.rvm/rubies/ruby-2.0.0-p0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.4ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.4ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (126.1ms)
+Completed 200 OK in 177ms (Views: 128.7ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:31:38 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-06-27 22:31:46 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"hello@gmail.com"}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (24.8ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Fri, 28 Jun 2013 03:31:46 UTC +00:00], ["updated_at", Fri, 28 Jun 2013 03:31:46 UTC +00:00]]
+  [1m[35m (2.1ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (0.9ms)
+Completed 200 OK in 43ms (Views: 4.5ms | ActiveRecord: 28.2ms)
+  [1m[36mEnlister Load (2.5ms)[0m  [1mSELECT "enlisters".* FROM "enlisters"[0m
+  [1m[35mEnlister Load (2.8ms)[0m  SELECT "enlisters".* FROM "enlisters" ORDER BY "enlisters"."id" ASC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:34:15 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (4.1ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.4ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (166.9ms)
+Completed 200 OK in 239ms (Views: 175.1ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:34:15 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:34:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:34:15 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:34:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:34:15 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:34:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:34:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:34:16 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:34:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:34:16 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-06-27 22:34:26 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"hellolove@g.com"}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (6.1ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Fri, 28 Jun 2013 03:34:26 UTC +00:00], ["email", "hellolove@g.com"], ["updated_at", Fri, 28 Jun 2013 03:34:26 UTC +00:00]]
+  [1m[35m (0.8ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (1.3ms)
+Completed 200 OK in 25ms (Views: 9.0ms | ActiveRecord: 7.2ms)
+  [1m[36mEnlister Load (2.5ms)[0m  [1mSELECT "enlisters".* FROM "enlisters"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:47:50 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (3.7ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (1.1ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (233.4ms)
+Completed 200 OK in 321ms (Views: 270.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:47:51 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-06-27 22:47:59 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"blah@blah.com"}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (12.6ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Fri, 28 Jun 2013 03:47:59 UTC +00:00], ["email", "blah@blah.com"], ["updated_at", Fri, 28 Jun 2013 03:47:59 UTC +00:00]]
+  [1m[35m (2.2ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (1.2ms)
+Completed 200 OK in 40ms (Views: 7.5ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (1.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: :disable_with option is deprecated and will be removed from Rails 4.1. Use 'data: { disable_with: 'Text' }' instead. (called from block in _app_views_landing_pages_home_html_erb___1006461794339491878_70242638723640 at /Users/joshuachestang/CureFund/app/views/landing_pages/home.html.erb:56)
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.7ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 41ms (Views: 34.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:48:48 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-06-27 22:48:56 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"asdf@jfk.com"}, "commit"=>"Create Enlister"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Fri, 28 Jun 2013 03:48:57 UTC +00:00], ["email", "asdf@jfk.com"], ["updated_at", Fri, 28 Jun 2013 03:48:57 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (0.5ms)
+Completed 200 OK in 12ms (Views: 3.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 22:51:14 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.6ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (1.0ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 54ms (Views: 47.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500

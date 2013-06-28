@@ -50,10 +50,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="column_6 offset_3 form subscribe">
-                <input id="subscriber" type="email" id="mail" class="large" placeholder="Your email address">
+            
+              <%= form_for Enlister.new, :remote => true, :html => { :class => "column_6 offset_3 form subscribe"} do |f| %>
+                <%= f.email_field :email, :id => "subscriber", :id => "mail", :class => "large", :style => " border-top-right-radius: 0px; border-bottom-right-radius: 0px;", :placeholder => "Your email address" %>
+                
                 <button id="subscriber-submit" class="button large icon envelope"></button>
-            </div>
+              <% end %>
+
+
+                
         </div>
         <h5 class="text book">Join our mailing list to stay updated on our progress.</h5>
     </section>
@@ -90,10 +95,8 @@
     <section class="bck light padding">
         <div class="row text thin center">
             <div class="column_10 offset_1">
-                <h1 class="text book color theme">"Our deepest fear is not that we are inadequate.<br /> Our deepest fear is that we are powerful beyond measure."</h1>
-                <h4>
-                    We're utilizing online crowdfunding to increase support for finding cures for the most important people in our lives.
-                </h4>
+                <h1 class="text book color theme">We're utilizing online crowdfunding to increase support for finding cures for the most important people in our lives.</h1>
+                
             </div>
         </div>
     </section>
@@ -152,10 +155,10 @@
         <div class="row margin-bottom">
             <h1 class="color book theme center margin-bottom" style="text-align:center;">Starters</h1>
             <div class="column_5 text center" style="margin-left:10%;">
-                <h3 class="text thin">Joshua Chestang is the CTO and co-founder of Cure Fund. A restless mind that always strives for continuous improvement, able to create frameworks like <a href="http://lungo.tapquo.com" class="text normal">Lungo</a>, <a href="http://quojs.tapquo.com" class="text normal">QuoJS</a>, <a href="http://monocle.tapquo.com" class="text normal">Monocle</a> used by thousands of developers around the world.</h3>
+                <h3 class="text thin">Joshua Chestang is the CTO and co-founder of CureFund. A restless mind that always strives for continuous improvement, able to create frameworks like</h3>
              </div>
              <div class="column_5 text center">
-                <h3 class="text thin">Salvador Briggman is the CEO and co-founder of cureFund. A restless mind that always strives for continuous improvement, able to create frameworks like <a href="http://lungo.tapquo.com" class="text normal">Lungo</a>, <a href="http://quojs.tapquo.com" class="text normal">QuoJS</a>, <a href="http://monocle.tapquo.com" class="text normal">Monocle</a> used by thousands of developers around the world.</h3>
+                <h3 class="text thin">Salvador Briggman is the CEO and co-founder of CureFund. A restless mind that always strives for continuous improvement, able to create frameworks like</h3>
              </div>
          </div>
 
