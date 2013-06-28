@@ -1,0 +1,266 @@
+<script type="text/javascript">
+    jQuery(function($) {
+      $('#payment-form').submit(function(event) {
+        var $form = $(this);
+
+        // Disable the submit button to prevent repeated clicks
+        $form.find('button').prop('disabled', true);
+
+        Stripe.createToken($form, stripeResponseHandler);
+
+        // Prevent the form from submitting with the default action
+        return false;
+      });
+    });
+    var stripeResponseHandler = function(status, response) {
+      var $form = $('#payment-form');
+
+      if (response.error) {
+        // Show the errors on the form
+        $form.find('.payment-errors').text(response.error.message);
+        $form.find('button').prop('disabled', false);
+      } else {
+        // token contains id, last4, and card type
+        var token = response.id;
+        // Insert the token into the form so it gets submitted to the server
+        $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+        // and submit
+        $form.get(0).submit();
+      }
+    };
+</script>
+<!-- ========================== HEADER ========================== -->
+    <header class="bck margin-top margin-bottom">
+        <div class="row">
+            <div class="column_6">
+                <h2 class="text italic thin"><strong>Cure</strong>Fund</h2>
+            </div>
+            <nav class="column_6 text right">
+                <a href="#" class="button secondary"><span class="icon user"></span>Login</a>
+                <a href="#" class="button"><span class="icon pencil"></span>Signup</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bck darkest landing text center color white">
+        <div class="row">
+            <div class="column_10 offset_1">
+                <h1><strong>Cure</strong>Fund</h1>
+                <h2 class="margin-bottom">Raise money to find cures for diseases, disabilities, and conditions.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column_6 offset_3 form subscribe">
+                <input id="subscriber" type="email" id="mail" class="large" placeholder="Your email address">
+                <button id="subscriber-submit" class="button large icon envelope"></button>
+            </div>
+        </div>
+        <h5 class="text book">Join our mailing list to stay updated on our progress.</h5>
+    </section>
+
+    <section class="bck theme padding text center ">
+        <div class="row padding-bottom">
+            <div class="column_10 offset_1">
+                <h1 class="text book color default">Crowdfunding + Altruism</h1>
+                <h4>
+                    CureFund wants to utilize the collective power of scientists and research supporters <br /> around the world to find cures for our loved ones. 
+                </h4>
+            </div>
+        </div>
+
+        <div class="row padding-top">
+          <div class="column_4">
+              <h2 class="icon user"></h2>
+              <h5 class="text normal">Raise money for research</h5>
+              <small>Create CureFund projects to raise money for research through organizations or to campaign for current cure seeking organizations</small>
+          </div>
+          <div class="column_4">
+              <h2 class="icon group"></h2>
+              <h5 class="text normal">Invite others to join your movement</h5>
+              <small>Share information and links to your project to gain supporters for your cause. Utilize our network to gain even more support</small>
+          </div>
+          <div class="column_4">
+              <h2 class="icon cog"></h2>
+              <h5 class="text normal">Notify donors of your progress</h5>
+              <small>Let your donors how important it has been that the have support youxr cause. You never know what that might mean for your future research</small>
+          </div>
+        </div>
+    </section>
+
+    <section class="bck light padding">
+        <div class="row text thin center">
+            <div class="column_10 offset_1">
+                <h1 class="text book color theme">"Our deepest fear is not that we are inadequate.<br /> Our deepest fear is that we are powerful beyond measure."</h1>
+                <h4>
+                    We're utilizing online crowdfunding to increase support for finding cures for the most important people in our lives.
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="bck lightest landing">
+        <div class="row text center">
+            <div class="column_10 offset_1">
+                <h2 class="text bold color theme">Help fund CureFund's Development</h2>
+                
+                <div id="cure_fund" class ="row center">
+                  <div id="backing" class="column_5">
+                    <ul>
+                      <li class="stats" id="backers">
+                        <%= Donor.total_donors %>
+                        <span><%= pluralize(Donor.total_donors, 'donor') %></span>
+                      </li>
+                      <li class="stats">
+                        <%= number_to_currency Donor.donations_total, :precision => 0 %>
+                        <span>of <%= number_to_currency Donor.funding_goal, :precision => 0 %></span>
+                      </li>
+                      <li class="stats" id="days">
+                        <%= CureFundProject.time_left %>
+                        <span><%= pluralize(CureFundProject.time_left, "day") %> left</span>
+                      </li>
+                      
+                    </ul>
+
+                      <div id='progress_bg' class='small'>
+                        <div id='progress' class='' style='width: <%= Donor.percentage_raised_of_goal %>%;'>
+                        </div>
+                      </div>
+                    
+                    
+                    <div id="reserve_container">
+                      <p id="ship_date">Ships at the end of the summer.</p>
+                      <!-- <a href="#" class="button anchor success margin-top">Yes, please!</a> -->
+                      <!-- ========================== Modals ========================== -->
+                      <!-- <section class="padding bck light"> -->
+                          <div class="row margin-top margin-bottom text center">=
+                              <button class="large column_4" data-tuktuk-modal="big_modal">Donate Now</button>
+                          </div>
+                          <br />
+                      <!-- </section> -->
+                      <!-- <p id="price"><%#= Settings.price_human %></p> -->
+                      <p>Yes, by clicking the above button you're helping some random person in the world!</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="padding bck color">
+        <div class="row margin-bottom">
+            <h1 class="color book theme center margin-bottom" style="text-align:center;">Starters</h1>
+            <div class="column_5 text center" style="margin-left:10%;">
+                <h3 class="text thin">Joshua Chestang is the CTO and co-founder of Cure Fund. A restless mind that always strives for continuous improvement, able to create frameworks like <a href="http://lungo.tapquo.com" class="text normal">Lungo</a>, <a href="http://quojs.tapquo.com" class="text normal">QuoJS</a>, <a href="http://monocle.tapquo.com" class="text normal">Monocle</a> used by thousands of developers around the world.</h3>
+             </div>
+             <div class="column_5 text center">
+                <h3 class="text thin">Salvador Briggman is the CEO and co-founder of cureFund. A restless mind that always strives for continuous improvement, able to create frameworks like <a href="http://lungo.tapquo.com" class="text normal">Lungo</a>, <a href="http://quojs.tapquo.com" class="text normal">QuoJS</a>, <a href="http://monocle.tapquo.com" class="text normal">Monocle</a> used by thousands of developers around the world.</h3>
+             </div>
+         </div>
+
+        <div class="row ">
+            <div class="column_4 offset_4 text center">
+                <img src="https://lh4.googleusercontent.com/-27P83t9JaAY/AAAAAAAAAAI/AAAAAAAAADc/WtpO9JlHt-Q/s120-c/photo.jpg" style="height:150px; width:150px;" class="responsive rounded margin-bottom"/>
+                <a href="https://twitter.com/jrchestang" class="twitter-follow-button " data-show-count="true" data-dnt="true">Follow @jrchestang</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bck dark padding">
+        <div class="row margin-top margin-bottom">
+            <div class="column_5">
+                <p class="text bold big">Handcrafted by <a href="http://2and2labs.com" class="display inline">2&2 Labs USA</a></p>
+                We build <strong>responsive websites and apps</strong> for clients around the world.
+            </div>
+            <div class="column_4">
+                <p class="text bold big">Join the team!</p>
+                Let us know how you're doing! <a href="mailto:joshua@2and2labs.com?subject=Opportunity" class="text underline color theme">Get in touch</a>
+            </div>
+            <div class="column_3">
+                <p class="text bold big">Need some help?</p>
+                For quick answers or help <a href="https://twitter.com/jrchestang" target="_blank" class="text underline color theme">follow us</a>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- ========================== MODALS ========================== -->
+
+    <div id="big_modal" data-tuktuk="modal" class="column_8">
+        <header class="bck alert">
+            <h4 class="text thin inline">Make a donation today</h4>
+            <button data-modal="close" class="transparent small on-right inline icon remove"></button>
+        </header>
+        <div id="payment-form-wrapper">
+          <%= form_for ([@cure_fund_project, @donor]), :html => { :id  => "payment-form" }, :method => 'post' do |f| %>
+            <span class="payment-errors"></span>
+            <div class="form-row" id="donation_amounts">
+              <label>
+                <span>Donation Amount</span><br />
+                
+                <%#= f.select :donation_amount, ["5", "10", "15", "20", "25", "30", "50", "100"], :"data-stripe" => "number" %>
+                <%= f.radio_button :donation_amount, "5", :checked => true %>
+                <%= label :donation_amount_5, '$5' %>
+
+                <%= f.radio_button :donation_amount, "10" %>
+                <%= label :donation_amount_10, '$10' %>
+
+                <%= f.radio_button :donation_amount, "15" %>
+                <%= label :donation_amount_15, '$15' %>
+
+                <%= f.radio_button :donation_amount, "20" %>
+                <%= label :donation_amount_20, '$20' %>
+
+                <%= f.radio_button :donation_amount, "25" %>
+                <%= label :donation_amount_25, '$25' %>
+
+                <%= f.radio_button :donation_amount, "30" %>
+                <%= label :donation_amount_30, '$30' %>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Card Number</span>
+                <%= f.text_field :card_number, :"data-stripe" => "number"%>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span>CVC</span>
+                <%= f.text_field :cvc, :"data-stripe" => "cvc" %>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span>Card Expiration Month</span>
+                <span class="select"><%= f.select :expiration_date_month, ["", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],  :"data-stripe" => "exp-month" %></span>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Card Expiration Year</span>
+                <span class="select"><%= f.select :expiration_date_year, ["", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"], :"data-stripe" => "exp-year" %></span>
+              </label>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="button large success" style="margin-left: 20px;"><span class="icon ok"></span>Donate</button>
+              <button data-modal="close" class="button  alert"><span class="icon remove"></span>Cancel</button>
+            </div>
+          <% end %>
+        </div>
+         <!--  
+          <footer>
+            <button data-modal="close" class="button large success"><span class="icon ok"></span>Donate</button>
+            <button data-modal="close" class="button  alert"><span class="icon remove"></span>Cancel</button>
+          </footer> -->
+    </div>
+
+    <!-- TUKTUK.WIDGETS -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <%= javascript_include_tag "tuktuk.js" %>
