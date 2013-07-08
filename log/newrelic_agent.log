@@ -69,3 +69,31 @@
 [06/27/13 22:14:16 -0500 Joshuas-MacBook-Air.local (63672)] INFO : Installing ActiveRecord 4 instrumentation
 [06/27/13 22:14:16 -0500 Joshuas-MacBook-Air.local (63672)] INFO : Installing Rails4 Error instrumentation
 [06/27/13 22:14:16 -0500 Joshuas-MacBook-Air.local (63672)] INFO : Finished instrumentation
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Starting the New Relic agent in "development" environment.
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Reading configuration from config/newrelic.yml
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Disabling the Request Sampler.
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Environment: development
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Dispatcher: webrick
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Application: My Application
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] WARN : Agent configured not to send data in this environment.
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Installing Net instrumentation
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Installing Rails 4 Controller instrumentation
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Installing Rails 4 view instrumentation
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Installing ActiveRecord 4 instrumentation
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Installing Rails4 Error instrumentation
+[07/08/13 13:30:41 -0500 Joshuas-MacBook-Air.local (53977)] INFO : Finished instrumentation
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Starting the New Relic agent in "development" environment.
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Reading configuration from config/newrelic.yml
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Disabling the Request Sampler.
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Environment: development
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Dispatcher: webrick
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Application: My Application
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] WARN : Agent configured not to send data in this environment.
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Installing Net instrumentation
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Installing Rails 4 Controller instrumentation
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Installing Rails 4 view instrumentation
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Installing ActiveRecord 4 instrumentation
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Installing Rails4 Error instrumentation
+[07/08/13 14:12:26 -0500 Joshuas-MacBook-Air.local (54588)] INFO : Finished instrumentation

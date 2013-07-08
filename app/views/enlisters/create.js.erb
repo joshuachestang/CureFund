@@ -1,1 +1,6 @@
-create.js.erb
+$(".defaultText").val("");
+
+$("h5.text.book").animate({opacity:0},function(){
+        $(this).text("Thanks for allowing us to update you on our progress!")
+            .animate({opacity:1});  
+    })

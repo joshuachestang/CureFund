@@ -13,8 +13,8 @@ class DonorsController < ApplicationController
   	@cure_fund_project = CureFundProject.first
   	@donor = @cure_fund_project.donors.build(params[:donor])
   	respond_to do |format|
-  		format.html
-  		format.js
+  		format.html { redirect_to :back }
+  		# format.js
   	end
   end
 end

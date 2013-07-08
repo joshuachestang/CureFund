@@ -15186,3 +15186,908 @@ Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -050
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 22:51:15 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:12:44 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (2.8ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (154.4ms)
+Completed 200 OK in 474ms (Views: 332.9ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:12:45 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (4.1ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.5ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 101ms (Views: 70.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:22:17 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:01 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.6ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.5ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 45ms (Views: 38.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:23:35 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:25:35 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 83ms (Views: 22.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:25:36 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.7ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.4ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 78ms (Views: 72.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:31:35 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:32:43 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 63ms (Views: 58.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:32:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:32:43 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:32:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:32:43 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:32:43 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:32:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:32:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:32:44 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:32:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:32:44 -0500
+
+
+Started POST "/cure_fund_projects/1/donors" for 127.0.0.1 at 2013-07-08 14:46:47 -0500
+Processing by DonorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BE2RteJH9PQAX+z4ELGK9c+G+W4zmMZS1WfaQ3k3gWw=", "donor"=>{"donation_amount"=>"5", "card_number"=>"", "cvc"=>"", "expiration_date_month"=>"", "expiration_date_year"=>""}, "cure_fund_project_id"=>"1"}
+  [1m[35mCureFundProject Load (0.7ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+WARNING: Can't mass-assign protected attributes for Donor: card_number, cvc
+	app/controllers/donors_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 43ms
+
+ActionView::MissingTemplate (Missing template donors/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/joshuachestang/CureFund/app/views"
+):
+  app/controllers/donors_controller.rb:15:in `create'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.6ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (135.3ms)
+Completed 200 OK in 190ms (Views: 140.2ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:00 -0500
+
+
+Started POST "/cure_fund_projects/1/donors" for 127.0.0.1 at 2013-07-08 14:49:08 -0500
+Processing by DonorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BE2RteJH9PQAX+z4ELGK9c+G+W4zmMZS1WfaQ3k3gWw=", "donor"=>{"donation_amount"=>"5", "card_number"=>"", "cvc"=>"", "expiration_date_month"=>"", "expiration_date_year"=>""}, "cure_fund_project_id"=>"1"}
+  [1m[35mCureFundProject Load (0.7ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+WARNING: Can't mass-assign protected attributes for Donor: card_number, cvc
+	app/controllers/donors_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 18ms
+
+ActionView::MissingTemplate (Missing template donors/create, application/create with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/joshuachestang/CureFund/app/views"
+):
+  app/controllers/donors_controller.rb:15:in `create'
+
+
+  Rendered /Users/joshuachestang/.rvm/gems/ruby-2.0.0-p0/gems/actionpack-4.0.0.rc1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.6ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.6ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (156.1ms)
+Completed 200 OK in 226ms (Views: 162.2ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:40 -0500
+
+
+Started POST "/cure_fund_projects/1/donors" for 127.0.0.1 at 2013-07-08 14:49:45 -0500
+Processing by DonorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BE2RteJH9PQAX+z4ELGK9c+G+W4zmMZS1WfaQ3k3gWw=", "donor"=>{"donation_amount"=>"5", "card_number"=>"", "cvc"=>"", "expiration_date_month"=>"", "expiration_date_year"=>""}, "cure_fund_project_id"=>"1"}
+  [1m[35mCureFundProject Load (0.6ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+WARNING: Can't mass-assign protected attributes for Donor: card_number, cvc
+	app/controllers/donors_controller.rb:14:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:49:45 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (1.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.6ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 45ms (Views: 37.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:49:46 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[35mCureFundProject Load (0.6ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mDonor Load (0.5ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "donors".* FROM "donors"
+  Rendered landing_pages/home.html.erb within layouts/application (65.4ms)
+Completed 200 OK in 75ms (Views: 70.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:50:29 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-07-08 14:51:08 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"joshua.chestang@gmail.com"}}
+  [1m[36m (1.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (47.0ms)[0m  INSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Mon, 08 Jul 2013 19:51:08 UTC +00:00], ["email", "joshua.chestang@gmail.com"], ["updated_at", Mon, 08 Jul 2013 19:51:08 UTC +00:00]]
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+  Rendered enlisters/create.js.erb (0.9ms)
+Completed 200 OK in 69ms (Views: 5.4ms | ActiveRecord: 54.4ms)
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-07-08 14:51:11 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"joshua.chestang@gmail.com"}}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Mon, 08 Jul 2013 19:51:11 UTC +00:00], ["email", "joshua.chestang@gmail.com"], ["updated_at", Mon, 08 Jul 2013 19:51:11 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (1.2ms)
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.5ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.4ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 31ms (Views: 26.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 14:54:29 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-07-08 14:54:39 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"joshua.chestang@gmail.com"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Mon, 08 Jul 2013 19:54:39 UTC +00:00], ["email", "joshua.chestang@gmail.com"], ["updated_at", Mon, 08 Jul 2013 19:54:39 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (1.0ms)
+Completed 200 OK in 11ms (Views: 4.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 15:01:18 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.6ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.6ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (76.7ms)
+Completed 200 OK in 146ms (Views: 97.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 15:01:19 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-07-08 15:01:29 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"joshua.chestang@gmail.com"}}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (30.5ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Mon, 08 Jul 2013 20:01:29 UTC +00:00], ["email", "joshua.chestang@gmail.com"], ["updated_at", Mon, 08 Jul 2013 20:01:29 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (41.5ms)
+Completed 200 OK in 210ms (Views: 49.6ms | ActiveRecord: 31.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 15:02:19 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (3.2ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (1.0ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 75ms (Views: 61.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 15:02:20 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-07-08 15:02:30 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"joshua.chestang@gmail.com"}}
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Mon, 08 Jul 2013 20:02:30 UTC +00:00], ["email", "joshua.chestang@gmail.com"], ["updated_at", Mon, 08 Jul 2013 20:02:30 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (0.9ms)
+Completed 200 OK in 649ms (Views: 3.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (1.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.4ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 100ms (Views: 94.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 15:07:49 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-07-08 15:07:58 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"joshua.chestang@gmail.com"}}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Mon, 08 Jul 2013 20:07:58 UTC +00:00], ["email", "joshua.chestang@gmail.com"], ["updated_at", Mon, 08 Jul 2013 20:07:58 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (1.0ms)
+Completed 200 OK in 13ms (Views: 3.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.8ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.5ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (92.6ms)
+Completed 200 OK in 106ms (Views: 98.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:02 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-07-08 15:09:12 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"blah@blah.com"}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Mon, 08 Jul 2013 20:09:12 UTC +00:00], ["email", "blah@blah.com"], ["updated_at", Mon, 08 Jul 2013 20:09:12 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (1.4ms)
+Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (1.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.4ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 35ms (Views: 28.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 15:09:30 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-07-08 15:09:36 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"blah@blah.com"}}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Mon, 08 Jul 2013 20:09:36 UTC +00:00], ["email", "blah@blah.com"], ["updated_at", Mon, 08 Jul 2013 20:09:36 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (0.9ms)
+Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-08 15:12:06 -0500
+Processing by LandingPagesController#home as HTML
+  [1m[36mCureFundProject Load (0.8ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "donors"[0m
+  [1m[35mDonor Load (0.4ms)[0m  SELECT "donors".* FROM "donors"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "cure_fund_projects".* FROM "cure_fund_projects" ORDER BY "cure_fund_projects"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "donors".* FROM "donors"[0m
+  Rendered landing_pages/home.html.erb within layouts/application (135.1ms)
+Completed 200 OK in 156ms (Views: 145.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started GET "/assets/tuktuk.css?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started GET "/assets/stats.css?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started GET "/assets/tuktuk.icons.css?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started GET "/assets/tuktuk.theme.css?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started GET "/assets/tuktuk.js?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 15:12:07 -0500
+
+
+Started POST "/enlisters" for 127.0.0.1 at 2013-07-08 15:12:20 -0500
+Processing by EnlistersController#create as JS
+  Parameters: {"utf8"=>"✓", "enlister"=>{"email"=>"joshua@musicmind.co"}}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "enlisters" ("created_at", "email", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Mon, 08 Jul 2013 20:12:20 UTC +00:00], ["email", "joshua@musicmind.co"], ["updated_at", Mon, 08 Jul 2013 20:12:20 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  Rendered enlisters/create.js.erb (0.9ms)
+Completed 200 OK in 10ms (Views: 3.1ms | ActiveRecord: 1.7ms)
